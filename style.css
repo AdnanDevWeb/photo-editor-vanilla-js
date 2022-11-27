@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+html, body,  span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer,  hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #CFF5E7;
+}
+header{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    font-size: 2rem;
+    padding: 30px;
+    background-color: #59C1BD;
+    color: #0D4C92;
+    font-weight: bold;
+}
+main{
+    padding: 20px;
+}
+.img-container{
+    width: 50vw;
+
+}
+button{
+    border: 0;
+    width: fit-content;
+    width: 120px;
+    height: 50px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: antiquewhite;
+    border-radius: 15px;
+    background: #0D4C92;
+
+}
+
+.label-file{
+    cursor: pointer;
+    color: #0D4C92;
+    font-weight: bold;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+.input-file{
+    position: absolute;
+    left: 20px;
+    z-index: -1;
+    visibility: hidden;
+}
+#imageButton{
+    border: 0;
+    font-size: 1.4rem;
+    position: relative;
+    background: #0D4C92;
+}
+.editing-container-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.canvas{
+    width: 90vw;
+    margin-bottom: 20px;
+    height: 400px;
+    display: block;
+    border-radius: 7px;
+    outline: 1px solid black;
+}
+#name-span{
+    color:#CFF5E7;
+}
