@@ -51,12 +51,14 @@ body {
 }
 header{
     font-family: 'Poppins', sans-serif;
-    width: 100vw;
     font-size: 2rem;
     padding: 30px;
     background-color: #59C1BD;
     color: #0D4C92;
     font-weight: bold;
+}
+.name{
+    width: fit-content;
 }
 main{
     padding: 20px;
@@ -68,7 +70,7 @@ main{
 button{
     border: 0;
     width: fit-content;
-    width: 120px;
+    width: 150px;
     height: 50px;
     font-size: 1.05rem;
     font-weight: bold;
@@ -80,9 +82,14 @@ button{
 
 .label-file{
     cursor: pointer;
-    color: #0D4C92;
+    background-color: #083466;
+    padding: 15px;
+    font-size: 1rem;
+    display: block;
     font-weight: bold;
-    padding-top: 10px;
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
     text-decoration: underline;
 }
 .input-file{
@@ -97,11 +104,66 @@ button{
     position: relative;
     background: #0D4C92;
 }
+input[type="range"]{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 140px;
+    display: none;
+}
+.btnEleven{
+    justify-self: start;
+} 
+.editing-container-grid>div{
+    position: relative;
+}
 .editing-container-grid{
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 40px 10px;
+    justify-content: space-around;
+}
+.optToHide:nth-child(1){
+    grid-area: labelO;
+    align-self: center;
+}
+.optToHide:nth-child(2){
+    grid-area: inputO;
+}.optToHide:nth-child(3){
+    grid-area: labelTw;
+}.optToHide:nth-child(4){
+    grid-area: inputTw;
+}.optToHide:nth-child(5){
+    grid-area: labelT;
+}.optToHide:nth-child(6){
+    grid-area: inputT;
+}
+.optToHide{
+    position: absolute;
+    background-color: rgb(101, 77, 158);
+    padding: 20px;
+    border: 1px solid rgb(92, 62, 62);
+    border-radius: 15px;
+    color: azure;
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas:
+    'labelO inputO'
+    'labelTw inputTw'
+    'labenT inputT';
+    gap: 10px 7px;
+    visibility: hidden;
+    transition: .25s ease-in;
+
+}
+
+
+input[type="number"]{
+    width: 20px;
+    appearance: textfield;
+    height: 10px;
+    font-size: 0.8rem;
 }
 .canvas{
     width: 90vw;
@@ -109,7 +171,7 @@ button{
     height: 400px;
     display: block;
     border-radius: 7px;
-    outline: 1px solid black;
+    outline: 1px solid rgb(0, 0, 0);
 }
 #name-span{
     color:#CFF5E7;
