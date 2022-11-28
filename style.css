@@ -109,10 +109,10 @@ input[type="range"]{
     top: 50px;
     left: 0;
     width: 140px;
-    display: none;
+    /* display: none; */
 }
-.btnEleven{
-    justify-self: start;
+#ten{
+    align-self: start;
 } 
 .editing-container-grid>div{
     position: relative;
@@ -126,7 +126,6 @@ input[type="range"]{
 }
 .optToHide:nth-child(1){
     grid-area: labelO;
-    align-self: center;
 }
 .optToHide:nth-child(2){
     grid-area: inputO;
@@ -153,22 +152,30 @@ input[type="range"]{
     'labelTw inputTw'
     'labenT inputT';
     gap: 10px 7px;
-    visibility: hidden;
+    /* visibility: hidden; */
     transition: .25s ease-in;
 
 }
 
 
-input[type="number"]{
-    width: 20px;
-    appearance: textfield;
-    height: 10px;
-    font-size: 0.8rem;
+input[type="number"] {
+    border-radius: 6px;
+    border: 0.1px solid black;
+    height: 21px;
+    width: 65px;
+    position: absolute;
+    left: 17px;
+    bottom: -32px;
+  }
+#imgToEdit{
+    max-width: 100vw;
+    max-height: 100vh;
 }
 .canvas{
-    width: 90vw;
+    width: fit-content;
+    
     margin-bottom: 20px;
-    height: 400px;
+    height: fit-content;
     display: block;
     border-radius: 7px;
     outline: 1px solid rgb(0, 0, 0);
